@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FedEx</title>
+    <style>
+       
+       
+        html{
+            font-size: 10px;
+        }
+       
+
+        body{
+            background-image: url(nature.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 50vw;
+            height: 100vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+   
+    
+
+        h1{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgb(255, 167, 5);
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: rgb(104, 30, 173);
+            color: aliceblue;
+            position: absolute;
+            left: -40px;
+            top: -25px;
+            width: 100%;
+            overflow: auto;
+            font-size: 2rem;
+            z-index: 5;
+            
+           
+            
+            
+        }
+        .navbar li{
+           padding: 15px;
+           margin: 20px;
+           
+           
+           list-style: none;
+           overflow: auto;
+           position: relative;
+           left: 200px;
+        }
+        h2{
+            text-align: center;
+            position: absolute;
+            top: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 6rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .rightnavbar{
+            display: flex;
+            z-index: 10;
+            position: absolute;
+            top: 2px;
+            right: 76px;
+            font-size: 2rem;
+            list-style: none;
+            color: aliceblue;
+            
+        }
+       .rightnavbar li{
+            padding: 10px;
+    }
+    h1{
+        z-index: 15;
+        position: absolute;
+        top: -12px;
+        left: 50px;
+    }
+    .midnavbar{
+        display: flex;
+        position: absolute;
+        top: 328px;
+        left: 400px;
+        text-align: center;
+       
+    }
+   
+     .midnavbar li{
+        display: inline-block;  /* Makes each <li> align horizontally */
+        width: 150px;  /* Sets a fixed width for each box */
+        height: 115px;  /* Sets a fixed height for each box */
+        border: 0.5px solid black;  /* Adds a border around each box */
+        line-height: 73px;  /* Vertically centers the text using line-height */
+        margin: 0 0px;  /* Adds spacing between the boxes */
+        text-align: center;  /* Centers the text inside the box horizontally */
+        font-size: 2rem;
+        background-color: silver;
+        
+        
+      
+     }
+     .midnavbar li span {
+        display: block;  /* Ensures text is below the icon */
+        font-size: 16px;  /* Adjust text size */
+        line-height: 1.2;  /* Adjust line spacing */
+        color: #000;  /* Text color */
+}
+     .navbar2{
+
+        
+     width: 100%;
+     display: flex;
+     background-color: transparent;
+     padding: 0;
+     margin: 0;
+    
+     }
+ 
+    .navbar-items {
+        list-style: none;  /* Removes bullet points */
+        display: flex;  /* Aligns <li> items horizontally */
+        width: 100%;  /* Makes items stretch across navbar */
+        margin: 0;
+        padding: 0;
+        margin-top: 500px;
+        position: relative;
+        left: 321px;
+        height: 60px;
+        
+
+      }      
+      
+        
+      .item {
+        text-align: center;  /* Centers text inside the item */
+        padding: 12px 15px;  /* Padding for box size */
+        font-size: 16px;  /* Text size */
+        font-weight: bold;  /* Bold text */
+        text-transform: uppercase;  /* Uppercase text */
+        line-height: 1;  /* Adjusts line spacing */
+        border-right: 1px solid #ccc;  /* Divider line */
+        line-height: 35px;
+      } 
+            .grey-box {
+        background-color: #e0e0e0;  /* Light grey background */
+        color: black;  /* Black text */
+        flex: 3;  /* Larger width for "TRACKING ID" */
+      }
+
+      .orange-box {
+        background-color: #ff6600;  /* Orange background */
+        color: white;  /* White text */
+        flex: 1;  /* Smaller width for "TRACK" */
+      }
+
+/* Remove border for the last item */
+      .item:last-child {
+        border-right: none;
+      }
+       
+
+
+    </style>
+
+    
+</head>
+<body>
+    <h1>BilalX.</h1>
+    <div class="container1">
+        <ul class="navbar">
+            <li>Shipping</li>
+            <li>Tracking</li>
+            <li>Design&Print</li>
+            <li>Locations</li>
+            <li>Support</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="rightnavbar">
+            <li>Sign Up</li>
+            <li>or Log in</li>
+            <li></li>
+        </ul>
+    </div>
+    <h2>Ship, manage, track, deliver</h2>
+    <div>
+        <ul class="midnavbar">
+            <li id="class1">
+              <i class="fas fa-ship"></i>
+              <span>RARE % SHIP</span>
+            </li>
+            <li id="class2">
+              <i class="fas fa-search"></i>
+              <span>TRACK</span>
+            </li>
+            <li id="class3">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>LOCATIONS</span>
+            </li>
+          </ul>
+          <div class="navbar2">
+            <ul class="navbar-items">
+                <li class="item grey-box">TRACKING ID</li>
+                <li class="item orange-box">TRACK</li>
+            </ul>
+          </div>
+</body>
+</html>
